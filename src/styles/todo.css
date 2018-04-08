@@ -1,0 +1,117 @@
+body {
+    display: table;
+    margin: auto;
+}
+
+.todo {
+    width: 350px;
+    margin: 15px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+    .todo .todo-header {
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, .03);
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+    }
+        .todo .todo-header .header-info-wrapper > div {
+            display: inline-block;
+        }
+            .todo .todo-header .header-info-wrapper > div.header-buttons {
+                float: right;
+            }
+                .todo .todo-header .header-info-wrapper > div.header-buttons.hide {
+                    display: none;
+                }
+                    .todo .todo-header .header-info-wrapper > div.header-buttons > span {
+                        padding-left: 15px;
+                        cursor: pointer;
+                    }
+                        .todo .todo-header .header-info-wrapper > div.header-buttons > span:hover {
+                            opacity: 0.7;
+                        }
+    .todo .navbar {
+        margin-bottom: 0;
+        border: none;
+        font-size: 16px;
+        min-height: auto;
+    }
+        .todo .navbar .container {
+            width: 100%;
+            padding-right: 0;
+        }
+            .todo .navbar .navbar-header .navbar-brand {
+                font-size: inherit;
+                height: auto;
+                line-height: 10px;
+            }
+            .todo .navbar ul.navbar-nav {
+                width: calc(100% - 61px);
+            }
+                .todo .navbar ul.navbar-nav > li {
+                    min-width: 80px;
+                    text-align: center;
+                }
+                    .todo .navbar ul.navbar-nav > li > a {
+                        font-size: inherit;
+                        height: auto;
+                        line-height: 10px;
+                    }
+    .todo .todo-body {
+        max-height: 500px;
+        overflow: auto;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+    }
+        .todo .todo-body .checkbox {
+            display: inline-block;
+            width: 95%;
+        }
+        .todo .todo-body .completed .checkbox label {
+            text-decoration: line-through;
+        }
+        .todo .todo-body .todo-item-date > div {
+            font-size: 11px;
+        }
+            .todo .todo-body .todo-item-date > div:nth-child(2) {
+                text-align: right;
+            }
+        .todo .todo-body .remove-item {
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            top: calc(50% - 7px);
+            right: 15px;
+        }
+        .todo .todo-body .list-group-item:hover .remove-item {
+            display: inline-block;
+        }
+            .todo .todo-body .list-group-item .remove-item:hover {
+                opacity: 0.7;
+            }
+    .todo .todo-footer {
+        padding: 0.75rem 1.25rem;
+        background-color: rgba(0, 0, 0, .03);
+        border-top: 1px solid rgba(0, 0, 0, .125);
+    }
+        .todo .todo-footer .todo-submit-btn-wrapper {
+            padding-left: 0;
+        }
+            .todo .todo-footer .todo-submit-btn-wrapper button {
+                width: 100%;
+            }  
