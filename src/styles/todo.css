@@ -104,6 +104,9 @@ body {
             .todo .todo-body .list-group-item .remove-item:hover {
                 opacity: 0.7;
             }
+        .todo .todo-body .alert {
+            text-align: center;
+        }
     .todo .todo-footer {
         padding: 0.75rem 1.25rem;
         background-color: rgba(0, 0, 0, .03);

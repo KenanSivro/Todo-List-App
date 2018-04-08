@@ -125,6 +125,7 @@ export default class TodoApp extends React.Component {
                     visibleTodos={visibleTodos}
                     completeTodo={t => this.completeTodo(t)}
                     removeTodo={t => this.removeTodo(t)}
+                    visibilityFilter = {this.state.visibilityFilter}
                     />
                 {/* Footer Component */}
                 <Footer 
