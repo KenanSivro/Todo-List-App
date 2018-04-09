@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
 
-export default class Footer extends Component {
+export default class Footer extends React.Component {
     constructor(props) {
         super(props);
 

@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { ListGroup, ListGroupItem, Checkbox, Row, Col, Alert } from 'react-bootstrap';
 
 var dateFormat = require('dateformat');
 
-export default class TodoItems extends Component {
+export default class TodoItems extends React.Component {
     constructor(props) {
         super(props);
 
